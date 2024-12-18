@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>INFOTSAV</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="logo.png" rel="icon">
+  <link href="logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <style>
+    body {
+      background-color: black;
+      background-size: cover;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .image-box {
+      margin: 0 20px; /* Increased space between image boxes */
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .image-box:hover {
+      transform: scale(1.05);
+    }
+
+    .image-box img {
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .image-text {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 18px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-box:hover .image-text {
+      opacity: 1;
+    }
+
+    #backBtn {
+      position: absolute;
+      top: 20px;
+      left: 20px; /* Adjusted position to be at the left side of the header */
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      color: white;
+      z-index: 9999;
+      transition: transform 0.3s ease;
+    }
+
+    #backBtn:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header">
+    <div>
+      <button id="backBtn" class="back-to-top" title="Back">
+        <i class="ri-arrow-right-s-line"></i><span class="back-text">BACK</span>
+      </button>
+    </div>
+    <br>
+    <br>
+    <h1 style="color: aqua; text-align: center;">TECHNICAL EVENT</h1>
+  </header>
+
+  <div class="image-container">
+    <div class="image-box">
+      <img src="Resume (1)\4.jpg" alt="CODE DASH">
+      <div class="image-text"><a href="codedash.html" style="color: rgb(255, 255, 255);">CODE DASH</a></div>
+    </div>
+    <div class="image-box">
+      <img src="Resume (1)\5.jpg" alt="IDEA PRESENTATION">
+      <div class="image-text"><a href="idea.html" style="color: rgb(255, 255, 255);">IDEA PRESENTATION</a></div>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <div class="image-box">
+      <img src="Resume (1)\8.jpg" alt="POSTER">
+      <div class="image-text"><a href="Poster.html" style="color: rgb(255, 255, 255);">POSTER PRESENTATION</a></div>
+    </div>
+    <div class="image-box">
+      <img src="Resume (1)\10.jpg" alt="WEBSTROM 2.0">
+      <div class="image-text"><a href="web.html" style="color: rgb(255, 255, 255);">WEBSTROM 2.0</a></div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <button id="menuToggleBtn" class="menu-toggle-button" title="Toggle Social Media Links">
+      <i class="ri-arrow-up-s-line"></i>
+    </button>
+    <div id="socialLinksContainer" class="social-links-container d-none">
+      <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+      <a href="https://www.facebook.com/teamnequit/" class="facebook"><i class="bx bxl-facebook"></i></a>
+      <a href="https://instagram.com/team_nequit?igshid=1c0yjowhovn46" class="instagram"><i class="bx bxl-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/team-nequit" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const backBtn = document.getElementById('backBtn');
+      if (backBtn) {
+        backBtn.addEventListener('click', function() {
+          goBack();
+        });
+      }
+    });
+
+    const menuToggleBtn = document.getElementById('menuToggleBtn');
+    const socialLinksContainer = document.getElementById('socialLinksContainer');
+
+    menuToggleBtn.addEventListener('click', function() {
+      socialLinksContainer.classList.toggle('d-none');
+      const arrowIcon = menuToggleBtn.querySelector('i');
+      const buttonText = menuToggleBtn.textContent.trim();
+      menuToggleBtn.innerHTML = buttonText === 'Close Menu' ? '<i class="ri-arrow-up-s-line"></i>' : '<i class="ri-arrow-down-s-line"></i> Close Menu';
+    });
+
+    document.querySelectorAll('.image-box').forEach(box => {
+      const text = box.querySelector('.image-text');
+
+      box.addEventListener('mouseenter', () => {
+        text.classList.add('middle');
+      });
+
+      box.addEventListener('mouseleave', () => {
+        text.classList.remove('middle');
+      });
+    });
+  </script>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
